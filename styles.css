@@ -1,0 +1,621 @@
+
+
+/* styles.css */
+
+/* Global Styles */ body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f2f2f2; }
+
+h1, h2, p { margin: 0; }
+
+a { text-decoration: none; color: #000000; }
+
+ul { list-style: none; margin: 0; padding: 0; }
+
+/* Header */ header { background-color: #1766A6; color: #fff; padding: 20px; }
+
+header h1 { font-size: 32px; margin: 0; }
+
+nav ul { display: flex; justify-content: space-around; align-items: center; }
+
+nav li { margin: 0 20px; }
+
+nav a { font-size: 22px; transition: color 0.3s ease; }
+
+nav a:hover { color: #88C7F3; }
+
+/* Hero Section */ .hero-section { background-image: url("https://zlatoust.apteka74.ru/upload/medialibrary/40d/2r7rsh28hmbe0ydgcv3h4k5or13ftngc.jpg"); background-size: cover; background-position: center; text-align: center; padding: 80px 0; }
+
+.hero-section h2 { font-size: 48px; color: #fff; margin-bottom: 20px; }
+
+.hero-section p { font-size: 24px; color: #fff; margin-bottom: 40px; line-height: 1.4; }
+
+.cta-button { display: inline-block; background-color: #fff; color: #1766A6; padding: 16px 40px; font-size: 22px; border-radius: 50px; transition: background-color 0.3s ease; }
+
+.cta-button:hover { background-color: #1766A6; color: #fff; cursor: pointer; }
+
+/* Interactive Elements */
+
+.cta-button:active { transform: scale(0.95); }
+
+input[type="text"], input[type="password"], textarea { width: 100%; padding: 10px; font-size: 16px; margin-bottom: 20px; border-radius: 4px; border: none; background-color: #f2f2f2; }
+
+input[type="submit"], button { background-color: #1766A6; color: #fff; padding: 10px 20px; font-size: 20px; border: none; border-radius: 4px; transition: background-color 0.3s ease; }
+
+input[type="submit"]:hover, button:hover { background-color: #88C7F3; cursor: pointer; }
+
+/* Footer */ footer { background-color: #333; color: #fff; text-align: center; padding: 20px; }
+
+.select-city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.select-city__label {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.select-city__select {
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+  color: #000000;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.select-city__select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.select-city__select option:first-of-type {
+  color: #888;
+}
+
+.select-city {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.select-city p,
+.select-city select {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.select-city select {
+  background-color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #212121;
+}
+
+.signin-btn {
+  margin-left: auto;
+}
+
+.address {
+  margin-bottom: 10px;
+}
+
+.hero-section {
+  background-color: #f3f3f3;
+  padding: 50px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00aeef;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #007bbf;
+}
+footer p { font-size: 18px; margin: 0; }
+
+/* Comments Section */
+
+.catalog-section {
+  padding: 50px 0;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.product {
+  width: calc(33.33% - 10px);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.product h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  color: #777;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.product-details {
+  display: flex;
+  justify-content: center;
+}
+
+.buy-now-btn {
+  background-color: #008000;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buy-now-btn:hover {
+  background-color: #05a105;
+}
+.comments-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .comments-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .comment-box {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .comment {
+    display: none;
+    margin-bottom: 40px;
+  }
+  
+  .comment img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+  
+  .comment-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .comment-info p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .rating {
+    margin-top: 10px;
+  }
+  
+  .star {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .star.active {
+    color: #f7d32e;
+  }
+  
+  .show-more-button {
+    background-color: #1766A6;
+    color: #000000;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .show-more-button:hover {
+    background-color: #88C7F3;
+  }
+
+/* Global Styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	color: #333;
+}
+
+h1, h2, h3, p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+header {
+	background-color: #1766a6;
+	color: #fff;
+	padding: 20px;
+}
+
+header h1 {
+	font-size: 32px;
+	margin: 0;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav li {
+	margin: 0 20px;
+}
+
+nav a {
+	font-size: 22px;
+	transition: color 0.3s ease;
+}
+
+nav a:hover {
+	color: #88c7f3;
+}
+
+/* Hero Section */
+.hero-section {
+	background-image: url("https://zlatoust.apteka74.ru/upload/medialibrary/40d/2r7rsh28hmbe0ydgcv3h4k5or13ftngc.jpg");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	padding: 80px 0;
+}
+
+.hero-section h2 {
+	font-size: 48px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.hero-section p {
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 40px;
+	line-height: 1.4;
+}
+
+.cta-button {
+	display: inline-block;
+	background-color: #fff;
+	color: #1766a6;
+	padding: 16px 40px;
+	font-size: 22px;
+	border-radius: 50px;
+	transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+	background-color: #1766a6;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* Catalog Section */
+.catalog-section {
+	background-color: #fff;
+	padding: 80px 0;
+	text-align: center;
+}
+
+.catalog-section h2 {
+	font-size: 32px;
+	margin-bottom: 40px;
+}
+
+.products-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.product {
+	background-color: #f2f2f2;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	margin: 20px;
+	border-radius: 4px;
+	padding: 20px;
+	
+}
+
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1555105581-946491f6f227?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGJveXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80');
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+  color: #354B5E;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #88C7F3;
+  padding: 20px;
+}
+
+/* Заголовки */
+h1 {
+  font-size: 3em;
+  letter-spacing: 3px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 0 0 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+/* Навигация */
+nav {
+  margin-top: 20px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #354B5E;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #88C7F3;
+}
+
+/* Общие стили контейнеров */
+.container {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Контейнер отзывов */
+.reviews-container {
+  background-color: #88C7F3;
+  margin-right: 20px;
+  width: 45%;
+}
+
+.review {
+  border-bottom: 1px solid #D5EDF7;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.review:last-child {
+  border: none;
+  margin-bottom: 0;
+}
+
+/* Контейнер комментариев */
+.comments-container {
+  background-color: #D5EDF7;
+  width: 50%;
+}
+
+/* Форма */
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  background-color: #D5EDF7;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.form-select {
+  background-color: #D5EDF7;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.form-button {
+  background-color: #88C7F3;
+  border: none;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+.form-button:hover {
+  background-color: rgb(0, 0, 0);
+  color: #000000;
+}
+
+/* Контейнер для комментариев */
+#comments {
+  margin-top: 20px;
+}
+
+/* Подвал */
+footer {
+  background-color: #88C7F3;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+/* Отступы */
+.margin-bottom--8 {
+  margin-bottom: 8px;
+}
+
+.margin-bottom--16 {
+  margin-bottom: 16px;
+}
+
+.margin-bottom--20 {
+  margin-bottom: 20px;
+}
+
+.margin-left--8 {
+  margin-left: 8px;
+}
+
+.margin-left--16 {
+  margin-left: 16px;
+}
+
+.margin-top--20 {
+  margin-top: 20px;
+}
+
+.margin-right--20 {
+  margin-right: 20px;
+}
+
+.padding--20 {
+  padding: 20px;
+}
+
+.padding-top--8 {
+  padding-top: 8px;
+}
+
+.padding-right--8 {
+  padding-right: 8px;
+}
+
+.padding-bottom--8 {
+  padding-bottom: 8px;
+}
+
+.padding-left--8 {
+  padding-left: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+body { font-family: Arial, sans-serif; font-size: 16px; color: #555; line-height: 1.5; margin: 0; padding: 0; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; margin: 0; }
+
+nav ul { list-style: none; margin: 0; padding: 0; }
+
+nav li { display: inline-block; margin-right: 20px; }
+
+nav li a { display: block; color: #555; text-decoration: none; padding: 5px 0; }
+
+nav li a:hover { color: #00bcd4; }
+
+.active a { color: #00bcd4; border-bottom: 2px solid #00bcd4; }
+
+.registration-section { max-width: 600px; margin: 50px auto; }
+
+form label { display: block; margin-bottom: 10px; font-weight: bold; }
+
+form input[type="text"], form input[type="email"], form input[type="password"] { padding: 10px; border: 1px solid #000000; border-radius: 5px; width: 100%; margin-bottom: 20px; }
+
+form input[type="submit"] { background-color: #00bcd4; color: #ffffff; border: none; border-radius: 5px; padding: 10px 20px; font-weight: bold; cursor: pointer; }
+
+form input[type="submit"]:hover { background-color: #0097a7; }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Отзывы - Аптека "Жизнь"</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="comments.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Аптека "Жизнь"</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог товаров</a></li>
+        <li><a href="register.html">Регистрация</a></li>
+        <li class="active"><a href="#">Отзывы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="reviews-section">
+      <h2>Отзывы</h2>
+      <div class="review">
+        <h3>Максим Федоринов</h3>
+        <p>Отличная аптека! Быстрое обслуживание и широкий выбор лекарств.</p>
+      </div>
+      <div class="review">
+        <h3>Владимир Синцев</h3>
+        <p>Я доволен качеством продукции и внимательным персоналом. Рекомендую!</p>
+      </div>
+      <div class="review">
+        <h3>Светлана Воробжанская</h3>
+        <p>Пожалуйста, разработайте доставку рецептурных препаратов, чтобы можно было приложить фото рецепта врача. Было бы очень удобно для пожилых людей и тех, кто не может посетить аптеку лично. Спасибо!</p>
+      </div>
+    </section>
+    <section class="comments-section">
+      <h2>Оставить отзыв</h2>
+      <!-- Форма для отправки отзыва с помощью JavaScript -->
+      <form onsubmit="submitComment(event)">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="comment">Отзыв:</label>
+        <textarea id="comment" name="comment" required></textarea>
+        <br>
+        <label for="rating">Оценка:</label>
+        <select id="rating" name="rating" required>
+          <option value="" disabled selected>-- Выбрать оценку --</option>
+          <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+          <option value="4">&#9733;&#9733;&#9733;&#9733;&#9734;</option>
+          <option value="3">&#9733;&#9733;&#9733;&#9734;&#9734;</option>
+          <option value="2">&#9733;&#9733;&#9734;&#9734;&#9734;</option>
+          <option value="1">&#9733;&#9734;&#9734;&#9734;&#9734;</option>
+        </select>
+        <br>
+        <input type="submit" value="Оставить отзыв">
+      </form>
+      <hr>
+      <!-- Место для вывода отзывов -->
+      <div id="comments"></div>
+    </section>
